@@ -141,6 +141,24 @@ Open 👉 **[http://localhost:8501](http://localhost:8501)**
 
 ---
 
+## 🐳 Run with Docker Image
+
+Pull the published image directly from Docker Hub:
+
+```bash
+docker pull mahar628/vectordocs:latest
+```
+
+Run the application:
+
+```bash
+docker run --rm -p 8501:8501 mahar628/vectordocs:latest
+```
+
+Open 👉 **[http://localhost:8501](http://localhost:8501)**
+
+---
+
 ## 🔑 Setting `OPENAI_API_KEY` (Streamlit UI)
 
 VectorDocs allows you to **set the OpenAI API key directly from the Streamlit web interface**.
