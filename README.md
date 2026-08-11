@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/logo.png" alt="EmbeddoraDoc Logo" width="120"/>
+  <img src="assets/logo.png" alt="VectorDocs Logo" width="120"/>
 </p>
 
-<h1 align="center">EmbeddoraDoc 🧠🤖</h1>
+<h1 align="center">VectorDocs 🧠🤖</h1>
 
 <p align="center">
   <b>Hybrid Retrieval-Augmented Document Intelligence Assistant</b>
@@ -17,11 +17,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Maharavan/EmbeddoraDoc/stargazers">
-    <img src="https://img.shields.io/github/stars/Maharavan/EmbeddoraDoc?style=social" />
+  <a href="https://github.com/Maharavan/VectorDocs/stargazers">
+    <img src="https://img.shields.io/github/stars/Maharavan/VectorDocs?style=social" />
   </a>
-  <a href="https://github.com/Maharavan/EmbeddoraDoc/forks">
-    <img src="https://img.shields.io/github/forks/Maharavan/EmbeddoraDoc?style=social" />
+  <a href="https://github.com/Maharavan/VectorDocs/forks">
+    <img src="https://img.shields.io/github/forks/Maharavan/VectorDocs?style=social" />
   </a>
 </p>
 
@@ -29,13 +29,13 @@
 
 ## 🚀 Overview
 
-**EmbeddoraDoc** is a **session-aware Retrieval-Augmented Generation (RAG) assistant** that allows users to upload documents (**PDF / TXT / JSON**) and interact with them conversationally.
+**VectorDocs** is a **session-aware Retrieval-Augmented Generation (RAG) assistant** that allows users to upload documents (**PDF / TXT / JSON**) and interact with them conversationally.
 
-Unlike basic vector-only RAG systems, EmbeddoraDoc uses a **hybrid retrieval pipeline** combining semantic embeddings, keyword search, and cross-encoder reranking to deliver **accurate, grounded answers with reduced hallucinations**.
+Unlike basic vector-only RAG systems, VectorDocs uses a **hybrid retrieval pipeline** combining semantic embeddings, keyword search, and cross-encoder reranking to deliver **accurate, grounded answers with reduced hallucinations**.
 
 ---
 
-## 🧠 Why EmbeddoraDoc?
+## 🧠 Why VectorDocs?
 
 Traditional RAG systems often:
 
@@ -43,7 +43,7 @@ Traditional RAG systems often:
 * Retrieve loosely related chunks
 * Hallucinate when context is weak
 
-**EmbeddoraDoc solves this by design.**
+**VectorDocs solves this by design.**
 
 ### 🔬 Hybrid Retrieval Pipeline
 
@@ -96,7 +96,7 @@ LLM (Answer + Validation)
 ## 📁 Project Structure
 
 ```
-EmbeddoraDoc/
+VectorDocs/
 │── app/
 │   ├── main.py
 │   ├── components/
@@ -141,9 +141,27 @@ Open 👉 **[http://localhost:8501](http://localhost:8501)**
 
 ---
 
+## 🐳 Run with Docker Image
+
+Pull the published image directly from Docker Hub:
+
+```bash
+docker pull mahar628/vectordocs:latest
+```
+
+Run the application:
+
+```bash
+docker run --rm -p 8501:8501 mahar628/vectordocs:latest
+```
+
+Open 👉 **[http://localhost:8501](http://localhost:8501)**
+
+---
+
 ## 🔑 Setting `OPENAI_API_KEY` (Streamlit UI)
 
-EmbeddoraDoc allows you to **set the OpenAI API key directly from the Streamlit web interface**.
+VectorDocs allows you to **set the OpenAI API key directly from the Streamlit web interface**.
 
 ### 🧭 Steps
 
@@ -194,29 +212,6 @@ Each chat session maintains:
 * Its own conversation history
 
 You can switch between chats without losing progress.
-
----
-
-## 🚀 Docker Deployment
-
-```bash
-docker build -t embeddoradoc:latest .
-```
-
-```bash
-docker run -p 8501:8501 embeddoradoc:latest
-```
-
----
-
-## ☁️ Cloud Deployment
-
-🟢 **Railway (Docker-based)**
-
-* Automatic build & deploy into docker hub
-* Public HTTPS endpoint
-
-Live URL - https://embeddoradoc-production.up.railway.app/
 
 ---
 

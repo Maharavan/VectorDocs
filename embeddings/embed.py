@@ -89,7 +89,7 @@ def embed_vector(query,index_path='faiss_index'):
         context = "\n\n---\n\n".join([doc.page_content for doc in reranked_docs])
 
         system_prompt = ("""
-        You are Embeddoradoc, a document-based reasoning assistant.
+        You are VectorDocs, a document-based reasoning assistant.
 
         You must:
         - Read the context carefully.

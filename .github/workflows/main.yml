@@ -1,4 +1,4 @@
-name: EmbeddoraDoc
+name: VectorDocs
 on:
     push:
         branches:
@@ -15,10 +15,10 @@ jobs:
                    echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u "${{ secrets.DOCKER_USERNAME}}" --password-stdin
             - name: Build docker image
               run: |
-                    docker build -t embeddoradoc:latest .
+                    docker build -t vectordocs:latest .
             - name: Tag the image
               run: |
-                    docker tag embeddoradoc:latest ${{secrets.DOCKER_USERNAME}}/embeddoradoc:latest
+                    docker tag vectordocs:latest ${{secrets.DOCKER_USERNAME}}/vectordocs:latest
             - name: Push the image
               run: |
-                    docker push ${{secrets.DOCKER_USERNAME}}/embeddoradoc:latest
+                    docker push ${{secrets.DOCKER_USERNAME}}/vectordocs:latest

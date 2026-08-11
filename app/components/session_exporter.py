@@ -6,7 +6,7 @@ from io import BytesIO
 def chat_session_exporter():
     buffer =  BytesIO()
     filename = 'chat_session.pdf'
-    documenttitle = 'EmbeddoraDoc chat session'
+    documenttitle = 'VectorDocs chat session'
 
     pdf = canvas.Canvas(buffer)
     pdf.setTitle(documenttitle)
