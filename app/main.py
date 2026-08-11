@@ -16,7 +16,7 @@ logo = Image.open("assets/logo.png")
 
 st.set_page_config(
     page_icon=logo,
-    page_title='EmbeddoraDoc'
+    page_title='VectorDocs'
 )
 load_css()
 
@@ -44,7 +44,7 @@ with col1:
     
     st.image(logo, width=125) 
 with col2:
-    st.title("EmbeddoraDoc 🧠🤖")
+    st.title("VectorDocs 🧠🤖")
 
 content_file = file_uploader()
 
@@ -77,7 +77,7 @@ if content_file is not None and not st.session_state.chat_sessions[st.session_st
         st.session_state.chat_sessions[st.session_state.current_session]["faiss_upload"] = True
 
 
-query = st.chat_input('Hello from EmbeddoraDoc!')
+query = st.chat_input('Hello from VectorDocs!')
 if content_file is not None:
     if query and st.session_state.OPENAI_API_KEY:
         user_query(query)
