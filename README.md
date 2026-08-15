@@ -223,6 +223,16 @@ You can switch between chats without losing progress.
 
 ---
 
+## 📝 Featured Article
+
+I wrote about the motivation behind VectorDocs, the problems I encountered with existing **Chat-with-PDF applications**, and why I decided to build my own document Q&A system.
+
+👉 **[Why I Stopped Trusting Chat-with-PDF Apps and Built My Own](https://medium.com/@maharavan10/why-i-stopped-trusting-chat-with-pdfs-apps-and-built-my-own-e5d3859f3b4b)**
+
+> Explore the journey behind VectorDocs — from the limitations of existing PDF chat tools to building a more transparent and controllable document intelligence application.
+
+---
+
 ## 📜 License
 
 Licensed under the **MIT License**.
